@@ -1,0 +1,12 @@
+import "dotenv/config";
+import express from "express";import mongoose from "mongoose";import session from "express-session";import MongoStore from "connect-mongo";import helmet from "helmet";import rateLimit from "express-rate-limit";
+import authRoutes from "./routes/auth.js";import profileRoutes from "./routes/profiles.js";import paymentRoutes,{stripeWebhook} from "./routes/payments.js";import publicRoutes from "./routes/public.js";
+for(const key of ["MONGODB_URI","SESSION_SECRET","STRIPE_SECRET_KEY","STRIPE_PRICE_ID"])if(!process.env[key])console.warn(`Missing ${key}`);
+await mongoose.connect(process.env.MONGODB_URI);
+const app=express();app.set("view engine","ejs");app.set("views","views");app.set("trust proxy",1);
+app.post("/stripe/webhook",express.raw({type:"application/json"}),stripeWebhook);
+app.use(helmet({contentSecurityPolicy:false}));app.use(express.urlencoded({extended:true,limit:"2mb"}));app.use(express.json());app.use(express.static("public"));app.use(rateLimit({windowMs:15*60*1000,limit:300}));
+app.use(session({secret:process.env.SESSION_SECRET,resave:false,saveUninitialized:false,store:MongoStore.create({mongoUrl:process.env.MONGODB_URI}),cookie:{httpOnly:true,sameSite:"lax",secure:process.env.NODE_ENV==="production",maxAge:1000*60*60*24*14}}));
+app.use((req,res,next)=>{res.locals.userId=req.session.userId||null;res.locals.path=req.path;next()});app.get("/health",(_,res)=>res.json({ok:true}));
+app.use(authRoutes);app.use(profileRoutes);app.use(paymentRoutes);app.use(publicRoutes);app.use((_,res)=>res.status(404).render("error",{message:"Page not found"}));
+const port=process.env.PORT||3000;app.listen(port,()=>console.log(`Tfem Hotties running on ${port}`));

@@ -1,0 +1,97 @@
+:root{--pink:#ff1684;--baby:#dff4ff;--ink:#30233a}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(135deg,#fff8fc,#edf9ff);color:var(--ink);font-family:"Trebuchet MS",Arial,sans-serif}
+a{text-decoration:none;color:inherit}
+.nav,footer{width:min(1180px,calc(100% - 40px));margin:auto;display:flex;align-items:center;justify-content:space-between}
+.nav{height:86px}
+.nav nav{display:flex;gap:22px;align-items:center;font-size:12px;text-transform:uppercase}
+.nav form{margin:0}
+.nav button{border:0;background:transparent}
+.logo{font-size:20px;font-weight:600}
+.logo span{font:italic 28px Georgia;color:var(--pink)}
+.logo i{color:#63c5f2}
+.pill,.primary{background:var(--pink);color:#fff;border:0;border-radius:99px;padding:14px 20px;font-weight:800;cursor:pointer}
+.hero{text-align:center;padding:75px 20px 85px;background:linear-gradient(#ffd9eb88,#ddf4ff88)}
+.hero>p,.listingHero>p,.profileTop p,.formPage>p,.dashboard>p,.panel>p{color:var(--pink);font-size:11px;font-weight:900;letter-spacing:.2em}
+.hero h1,.listingHero h1,.profileTop h1,.formPage h1,.dashboard h1,.panel h1{font:600 clamp(50px,7vw,88px)/.95 "Segoe Print",cursive;margin:25px 0 40px}
+.hero h1 em,.listingHero h1 em{color:var(--pink);font-style:normal}
+.hero label{display:block;font-size:12px;font-weight:800;margin-bottom:10px}
+.search{max-width:650px;margin:auto;position:relative}
+.search input{width:100%;height:60px;border:2px solid #ff75b6;border-radius:15px;padding:0 22px;font-size:17px}
+.search #suggestions{position:absolute;left:0;right:0;top:64px;background:white;z-index:5;border-radius:12px;overflow:hidden}
+.search #suggestions a{display:flex;justify-content:space-between;padding:13px 18px;border-bottom:1px solid #f7ddeb}
+.directory,.dashboard,.formPage{width:min(1180px,calc(100% - 40px));margin:60px auto 100px}
+.sectionHead{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid #ddd;padding-bottom:18px}
+.sectionHead h2{font:36px Georgia;color:var(--pink);margin:0}
+.locations{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:20px}
+.locations a{padding:15px;border-radius:8px;display:flex;flex-direction:column}
+.locations .pink{background:#fff0f8}
+.locations .blue{background:#e9f8ff}
+.locations span{font-size:10px;margin-top:5px}
+.centerPage{min-height:70vh;display:grid;place-items:center;padding:50px 20px}
+.panel{width:min(600px,100%);background:#fff;padding:40px;border:1px solid #f3c8dc;border-radius:22px;box-shadow:0 20px 60px #9a46701b}
+.panel h1{font-size:48px}
+.panel form,.auth form{display:grid;gap:18px}
+.panel label,.profileForm label{display:grid;gap:7px;font-size:12px;font-weight:700}
+.panel input,.profileForm input,.profileForm textarea{padding:13px;border:1px solid #e0cad5;border-radius:8px;background:#fff}
+.error{background:#ffe3e3;color:#9b1c1c;padding:12px;border-radius:8px;margin-bottom:18px}
+.inline{display:inline-block}
+.status{display:flex;justify-content:space-between;background:#fff;padding:35px;border-radius:18px;border:1px solid #cde9f7}
+.status h2{text-transform:capitalize}
+.status .actions{display:flex;flex-direction:column;align-items:end;gap:15px}
+.formGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.profileForm .wide{grid-column:1/-1}
+.profileForm textarea{min-height:140px}
+.profileForm>button{margin-top:25px}
+.price li{margin:13px 0}
+.price h2{font:600 25px "Segoe Print",cursive;color:var(--pink);margin:-20px 0 25px}
+.cards{width:min(1180px,calc(100% - 40px));margin:50px auto 90px;display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.listingHero,.profileTop{padding:55px max(20px,calc((100vw - 1180px)/2));background:linear-gradient(120deg,#ffd4e9,#d8f2ff)}
+.listingHero h1,.profileTop h1{font-size:58px;margin:14px 0}
+.card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #efcade}
+.card img,.placeholder{width:100%;aspect-ratio:4/5;object-fit:cover}
+.placeholder{display:grid;place-items:center;background:linear-gradient(145deg,#ff9acb,#9fdfff);font:italic 42px Georgia;color:#fff}
+.card h2,.card p{margin:12px}
+.card p{font-size:10px;color:#827783}
+.profileTop{display:flex;justify-content:space-between;align-items:end}
+.contact{background:white;padding:22px;border-radius:15px;display:flex;flex-direction:column;gap:9px}
+.contact a{color:var(--pink);font-weight:700}
+.detail{width:min(1180px,calc(100% - 40px));margin:45px auto 90px;display:grid;grid-template-columns:2fr 1fr;gap:22px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gallery button{border:0;padding:0;background:transparent;cursor:zoom-in}
+.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.detail video{width:100%;border-radius:14px}
+.bio{background:white;padding:25px;border-radius:14px;margin-top:15px}
+.bio h2{font:28px "Segoe Print",cursive}
+.bio p{line-height:1.65}
+.bio dl>div{display:flex;justify-content:space-between;border-top:1px solid #eee;padding:10px 0;font-size:12px}
+.bio dd{font-weight:700}
+.lightbox{position:fixed;inset:0;background:#211a22ed;z-index:20;display:flex;align-items:center;justify-content:center;gap:25px}
+.lightbox.hidden{display:none}
+.lightbox img{max-width:70vw;max-height:85vh}
+.lightbox button{border:0;background:transparent;color:white;font-size:60px}
+.lightbox #close{position:absolute;right:25px;top:15px}
+footer{border-top:1px solid #ddd;min-height:120px;font-size:11px}
+ @media(max-width:800px){.locations{grid-template-columns:repeat(2,1fr)}
+.cards{grid-template-columns:repeat(2,1fr)}
+.detail{grid-template-columns:1fr}
+.profileTop,.sectionHead,.status{align-items:start;flex-direction:column;gap:25px}
+.formGrid{grid-template-columns:1fr}
+.profileForm .wide{grid-column:auto}
+.nav nav>a:first-child{display:none}
+}
+
+/* Nationwide state directory */
+.stateGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:20px}
+.state{border:0;border-radius:8px;overflow:hidden}
+.state.pink{background:#fff0f8}
+.state.blue{background:#e9f8ff}
+.state summary{list-style:none;cursor:pointer;padding:15px;font-weight:800}
+.state summary::-webkit-details-marker{display:none}
+.state[open] summary{color:var(--pink)}
+.cityList{display:grid;padding:0 15px 15px}
+.cityList a{padding:7px 0;border-top:1px solid #ffffffcc;font-size:12px}
+.cityList a:hover{color:var(--pink)}
+.activeHead{margin-top:60px}
+@media(max-width:800px){.stateGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.stateGrid{grid-template-columns:1fr}}
