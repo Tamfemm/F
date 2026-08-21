@@ -1,0 +1,12 @@
+<%- include('partials/head',{title:"Tamara's Gallery | Tfem Hotties"}) %>
+<main class="tamaraPage">
+  <section class="tamaraTitle"><p>FROM TAMARA’S PRIVATE ALBUM</p><h1>My <em>Gallery</em></h1><span>A few moments from the journey.</span></section>
+  <%- include('partials/tamara-nav',{active:'gallery'}) %>
+  <section class="tamaraCarousel" data-tamara-carousel>
+    <button class="carouselArrow prev" type="button" aria-label="Previous photo">‹</button>
+    <div class="carouselStage"><% tamara.photos.forEach((photo,i)=>{ %><img class="<%= i===0?'active':'' %>" src="<%= photo %>" alt="Tamara gallery photo <%= i+1 %>"><% }) %></div>
+    <button class="carouselArrow next" type="button" aria-label="Next photo">›</button>
+    <div class="carouselDots"><% tamara.photos.forEach((_,i)=>{ %><button class="<%= i===0?'active':'' %>" type="button" aria-label="Show photo <%= i+1 %>" data-slide="<%= i %>"></button><% }) %></div>
+  </section>
+</main>
+<%- include('partials/foot') %>

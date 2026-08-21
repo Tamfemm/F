@@ -1,0 +1,7 @@
+<%- include('partials/head',{title:"Sordid Stories of Tamara's Past | Tfem Hotties"}) %>
+<main class="tamaraPage">
+  <section class="tamaraTitle storiesTitle"><p>HIGHS, LOWS & EVERYTHING BETWEEN</p><h1>Sordid Stories<br><em>of Tamara’s Past</em></h1><span>A weekly dispatch from a life in modeling.</span></section>
+  <%- include('partials/tamara-nav',{active:'stories'}) %>
+  <section class="storyList"><% tamara.stories.forEach(story=>{ %><article><small><%= story.date %></small><h2><%= story.title %></h2><p><%= story.body %></p></article><% }) %></section>
+</main>
+<%- include('partials/foot') %>

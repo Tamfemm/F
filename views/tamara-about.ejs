@@ -1,0 +1,13 @@
+<%- include('partials/head',{title:'About Tamara | Tfem Hotties'}) %>
+<main class="tamaraPage">
+  <section class="tamaraMasthead">
+    <div><p>THE WOMAN BEHIND TFEM HOTTIES</p><h1>Meet <em>Tamara.</em></h1><span>Model · storyteller · founder</span></div>
+    <img src="<%= tamara.portrait %>" alt="Tamara, founder of Tfem Hotties">
+  </section>
+  <%- include('partials/tamara-nav',{active:'about'}) %>
+  <section class="tamaraBiography">
+    <div class="tamaraPullquote"><small>ABOUT ME</small><h2>Hi, girlies. I’m Tamara.</h2><p><%= tamara.intro %></p></div>
+    <div class="tamaraCopy"><% tamara.bio.forEach(paragraph=>{ %><p><%= paragraph %></p><% }) %><div class="tamaraQuestions"><strong>Questions?</strong><span>Write me at:</span><% if(tamara.email==='YOUR_EMAIL_HERE'){ %><em>Your email will go here</em><% }else{ %><a href="mailto:<%= tamara.email %>"><%= tamara.email %></a><% } %></div></div>
+  </section>
+</main>
+<%- include('partials/foot') %>
