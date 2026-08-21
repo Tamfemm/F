@@ -7,7 +7,6 @@ a{text-decoration:none;color:inherit}
 .nav nav{display:flex;gap:22px;align-items:center;font-size:12px;text-transform:uppercase}
 .nav form{margin:0}
 .nav button{border:0;background:transparent}
-.founderNav{color:var(--pink);font-weight:800}
 .logo{font-size:20px;font-weight:600}
 .logo span{font:italic 28px Georgia;color:var(--pink)}
 .logo i{color:#63c5f2}
@@ -17,12 +16,6 @@ a{text-decoration:none;color:inherit}
 .hero h1,.listingHero h1,.profileTop h1,.formPage h1,.dashboard h1,.panel h1{font:600 clamp(50px,7vw,88px)/.95 "Segoe Print",cursive;margin:25px 0 40px}
 .hero h1 em,.listingHero h1 em{color:var(--pink);font-style:normal}
 .hero label{display:block;font-size:12px;font-weight:800;margin-bottom:10px}
-.tamaraIntro{width:min(790px,100%);margin:0 auto 55px;padding:18px 24px 18px 18px;display:grid;grid-template-columns:116px 1fr;gap:24px;align-items:center;text-align:left;background:#ffffffd9;border:1px solid #f1b7d3;border-radius:24px;box-shadow:0 18px 50px #88426917}
-.tamaraIntro img{width:116px;height:116px;object-fit:cover;border-radius:18px}
-.tamaraIntro small,.tamaraPodium small,.tamaraPage small{color:var(--pink);font-size:10px;font-weight:900;letter-spacing:.18em}
-.tamaraIntro h2{font:30px "Segoe Print",cursive;margin:4px 0}
-.tamaraIntro p{font-size:14px;line-height:1.55;margin:0}
-.tamaraIntro a,.tamaraPodium a,.tamaraPage a{color:var(--pink);font-weight:800}
 .search{max-width:650px;margin:auto;position:relative}
 .search input{width:100%;height:60px;border:2px solid #ff75b6;border-radius:15px;padding:0 22px;font-size:17px}
 .search #suggestions{position:absolute;left:0;right:0;top:64px;background:white;z-index:5;border-radius:12px;overflow:hidden}
@@ -51,13 +44,8 @@ a{text-decoration:none;color:inherit}
 .profileForm textarea{min-height:140px}
 .profileForm>button{margin-top:25px}
 .price li{margin:13px 0}
-.price h2{font:600 25px "Segoe Print",cursive;color:var(--pink);margin:-20px 0 25px}
 .cards{width:min(1180px,calc(100% - 40px));margin:50px auto 90px;display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
 .listingHero,.profileTop{padding:55px max(20px,calc((100vw - 1180px)/2));background:linear-gradient(120deg,#ffd4e9,#d8f2ff)}
-.tamaraPodium{width:min(760px,calc(100% - 40px));margin:35px auto -10px;padding:18px 24px 18px 18px;display:grid;grid-template-columns:92px 1fr;gap:20px;align-items:center;background:linear-gradient(115deg,#fff,#fff3f9);border:1px solid #f1b9d4;border-radius:22px;box-shadow:0 16px 45px #70304e14}
-.tamaraPodiumPhoto img{width:92px;height:92px;object-fit:cover;border-radius:16px;display:block}
-.tamaraPodium p{font:18px/1.55 Georgia,serif;margin:5px 0}
-.tamaraPodium strong{font:600 16px "Segoe Print",cursive;color:var(--pink)}
 .listingHero h1,.profileTop h1{font-size:58px;margin:14px 0}
 .card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #efcade}
 .card img,.placeholder{width:100%;aspect-ratio:4/5;object-fit:cover}
@@ -83,48 +71,13 @@ a{text-decoration:none;color:inherit}
 .lightbox button{border:0;background:transparent;color:white;font-size:60px}
 .lightbox #close{position:absolute;right:25px;top:15px}
 footer{border-top:1px solid #ddd;min-height:120px;font-size:11px}
-
-/* Tamara, founder */
-.tamaraPage{padding-bottom:95px}
-.tamaraMasthead{min-height:470px;padding:55px max(20px,calc((100vw - 1060px)/2));display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center;background:radial-gradient(circle at 80% 40%,#fff 0 11%,transparent 35%),linear-gradient(125deg,#fbd5e8,#dcefff)}
-.tamaraMasthead h1,.tamaraTitle h1{font:600 clamp(56px,8vw,100px)/.95 "Segoe Print",cursive;margin:18px 0 24px}
-.tamaraMasthead h1 em,.tamaraTitle h1 em{color:var(--pink);font-style:normal}
-.tamaraMasthead img{width:100%;max-height:360px;object-fit:cover;border:10px solid #fff;border-radius:34px 34px 90px 34px;box-shadow:0 25px 70px #5f34562c}
-.tamaraMiniNav{width:min(1060px,calc(100% - 40px));margin:-25px auto 55px;position:relative;display:flex;justify-content:center;gap:8px;padding:10px;background:#fff;border:1px solid #efcade;border-radius:18px;box-shadow:0 18px 45px #6e37511c}
-.tamaraMiniNav a{padding:13px 18px;border-radius:12px;color:var(--ink);text-align:center}
-.tamaraMiniNav a.active,.tamaraMiniNav a:hover{background:var(--pink);color:#fff}
-.tamaraBiography{width:min(1060px,calc(100% - 40px));margin:auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:28px}
-.tamaraPullquote,.tamaraCopy,.storyList article{background:#fff;border:1px solid #f1d2e1;border-radius:25px;padding:38px}
-.tamaraPullquote{background:linear-gradient(145deg,#fff1f8,#edf9ff)}
-.tamaraPullquote h2{font:39px "Segoe Print",cursive;margin:15px 0}
-.tamaraBiography p,.storyList p{font:17px/1.75 Georgia,serif}
-.tamaraQuestions{margin-top:32px;padding:22px;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;background:#fff4f9;border-radius:15px}
-.tamaraQuestions strong{font:24px "Segoe Print",cursive;color:var(--pink);width:100%}
-.tamaraQuestions em{color:#857580}
-.tamaraTitle{text-align:center;padding:70px 20px 85px;background:linear-gradient(120deg,#ffd6e9,#e2f4ff)}
-.tamaraTitle h1{font-size:76px;margin:18px 0}
-.tamaraCarousel{width:min(920px,calc(100% - 40px));margin:auto;display:grid;grid-template-columns:65px 1fr 65px;align-items:center;gap:18px}
-.carouselStage{height:min(68vw,650px);max-height:650px;position:relative;background:#fff;border:10px solid #fff;border-radius:28px;box-shadow:0 24px 70px #66324b27;overflow:hidden}
-.carouselStage img{display:none;width:100%;height:100%;object-fit:cover}
-.carouselStage img.active{display:block}
-.carouselArrow{border:0;background:#fff;color:var(--pink);width:58px;height:58px;border-radius:50%;font-size:45px;line-height:1;cursor:pointer;box-shadow:0 10px 30px #6c385521}
-.carouselDots{grid-column:1/-1;display:flex;justify-content:center;gap:8px}
-.carouselDots button{width:10px;height:10px;padding:0;border:0;border-radius:50%;background:#d9bdcb;cursor:pointer}
-.carouselDots button.active{width:28px;border-radius:8px;background:var(--pink)}
-.storiesTitle h1{font-size:clamp(48px,7vw,82px)}
-.storyList{width:min(850px,calc(100% - 40px));margin:auto;display:grid;gap:22px}
-.storyList article{position:relative;padding-left:55px}
-.storyList article:before{content:"♥";position:absolute;left:22px;top:40px;color:var(--pink);font-size:19px}
-.storyList h2{font:36px "Segoe Print",cursive;margin:12px 0}
  @media(max-width:800px){.locations{grid-template-columns:repeat(2,1fr)}
 .cards{grid-template-columns:repeat(2,1fr)}
 .detail{grid-template-columns:1fr}
 .profileTop,.sectionHead,.status{align-items:start;flex-direction:column;gap:25px}
 .formGrid{grid-template-columns:1fr}
 .profileForm .wide{grid-column:auto}
-.nav{height:auto;min-height:86px;padding:14px 0;align-items:flex-start}.nav nav{justify-content:flex-end;gap:10px;flex-wrap:wrap}.nav nav>a:first-child{display:none}.founderNav{width:100%;text-align:right}
-.tamaraIntro{grid-template-columns:80px 1fr;padding:14px;gap:14px}.tamaraIntro img{width:80px;height:100px}.tamaraIntro h2{font-size:23px}
-.tamaraMasthead{grid-template-columns:1fr;gap:28px}.tamaraMasthead img{max-height:440px}.tamaraBiography{grid-template-columns:1fr}.tamaraMiniNav{align-items:stretch;flex-direction:column}.tamaraMiniNav a{padding:10px}.tamaraCarousel{grid-template-columns:44px 1fr 44px;gap:7px}.carouselArrow{width:42px;height:42px;font-size:34px}.tamaraPodium{grid-template-columns:72px 1fr}.tamaraPodiumPhoto img{width:72px;height:84px}
+.nav nav>a:first-child{display:none}
 }
 
 /* Nationwide state directory */
@@ -141,3 +94,41 @@ footer{border-top:1px solid #ddd;min-height:120px;font-size:11px}
 .activeHead{margin-top:60px}
 @media(max-width:800px){.stateGrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.stateGrid{grid-template-columns:1fr}}
+
+/* Tamara's simple admin */
+.adminArea{--adminBlue:#63c5f2}
+.adminWelcome{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}
+.adminWelcome h1{margin-bottom:10px}
+.adminTopActions{display:flex;align-items:center;gap:18px}
+.adminTopActions form{margin:0}
+.adminTopActions button,.rowActions button{border:0;background:transparent;cursor:pointer;color:var(--ink);font-weight:700}
+.adminStats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:35px}
+.adminStats>div{background:#fff;border:1px solid #d9edf7;border-radius:16px;padding:22px;display:grid;gap:8px}
+.adminStats small{font-size:9px;letter-spacing:.12em;color:#857887}
+.adminStats strong{font-size:25px;color:var(--pink)}
+.adminPanel{background:#ffffffc9;border:1px solid #d8eaf3;border-radius:18px;padding:26px;margin-bottom:25px}
+.adminProfiles article{display:flex;align-items:center;justify-content:space-between;padding:17px 5px;border-bottom:1px solid #eee0e8}
+.adminProfiles article>div:first-child{display:grid;grid-template-columns:minmax(140px,1fr) minmax(150px,1fr) auto;align-items:center;gap:16px;flex:1}
+.adminProfiles span{font-size:12px}
+.badge{width:max-content;border-radius:99px;padding:5px 9px;text-transform:uppercase;font-size:8px;font-weight:900;letter-spacing:.08em;background:#eee}
+.badge.active{background:#d8f6e7;color:#16734b}
+.badge.past_due,.badge.canceled{background:#ffe5ef;color:#a51f58}
+.rowActions{display:flex;align-items:center;gap:13px;margin-left:18px;font-size:11px}
+.rowActions a{color:var(--pink);font-weight:700}
+.rowActions .publish{background:var(--pink);color:#fff;padding:8px 12px;border-radius:99px}
+.payments>div{display:grid;grid-template-columns:110px 1fr 130px 110px;gap:15px;padding:13px 4px;border-bottom:1px solid #eee0e8;font-size:12px}
+.payments small{text-transform:capitalize}
+.adminNote{font-size:11px;color:#887b89;margin-top:20px}
+.editorIntro{background:var(--baby);border-left:5px solid var(--adminBlue);padding:18px;margin:0 0 25px;border-radius:8px}
+.adminEditor{display:grid;gap:20px}
+.adminEditor>section{background:#fff;border:1px solid #d8eaf3;border-radius:18px;padding:25px;display:grid;gap:18px}
+.adminEditor h2{font:26px "Segoe Print",cursive;color:var(--pink);margin:0 0 8px}
+.adminEditor textarea{min-height:190px}
+.adminEditor select{padding:13px;border:1px solid #e0cad5;border-radius:8px;background:#fff}
+.adminPhotos{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.adminPhotos label{background:#fff3f9;border-radius:10px;overflow:hidden}
+.adminPhotos img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.adminPhotos span{padding:8px;font-size:10px}
+.publishBox{border-color:#ff9bc9!important;background:linear-gradient(120deg,#fff7fb,#effaff)!important}
+.editorButtons{display:flex;align-items:center;gap:20px}
+@media(max-width:800px){.adminWelcome{align-items:start;flex-direction:column;gap:20px}.adminStats{grid-template-columns:repeat(2,1fr)}.adminProfiles article{align-items:start;flex-direction:column;gap:14px}.adminProfiles article>div:first-child{width:100%;grid-template-columns:1fr}.rowActions{margin-left:0;flex-wrap:wrap}.payments>div{grid-template-columns:1fr 1fr}.adminPhotos{grid-template-columns:repeat(2,1fr)}}

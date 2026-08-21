@@ -21,8 +21,6 @@ services:
         sync: false
       - key: STRIPE_PRICE_ID
         sync: false
-      - key: PAYMENT_TEST_MODE
-        value: "false"
       - key: CLOUDINARY_CLOUD_NAME
         sync: false
       - key: CLOUDINARY_API_KEY
