@@ -1,6 +1,6 @@
-<%- include('partials/head',{title:`${about.pageTitle||'About Me'} | Tfem Hotties`}) %>
+<%- include('partials/head',{title:`${about.pageTitle||'About Me'} | TG Hotties`}) %>
 <main class="aboutPage">
-  <section class="aboutHero"><div><p>MEET THE WOMAN BEHIND TFEM</p><h1><%= about.pageTitle||'About Me' %></h1><span><%= about.tagline||'' %></span><a class="galleryJump" href="/gallery">View My Gallery</a></div><% if(about.mainImage?.url){ %><img src="<%= about.mainImage.url %>" alt="<%= about.displayName||'Tamara' %>"><% }else{ %><div class="aboutPhotoPlaceholder">♥</div><% } %></section>
+  <section class="aboutHero"><div><p>MEET THE WOMAN BEHIND TG</p><h1><%= about.pageTitle||'About Me' %></h1><span><%= about.tagline||'' %></span><a class="galleryJump" href="/gallery">View My Gallery</a></div><% if(about.mainImage?.url){ %><img src="<%= about.mainImage.url %>" alt="<%= about.displayName||'Tamara' %>"><% }else{ %><div class="aboutPhotoPlaceholder">♥</div><% } %></section>
   <section class="aboutContent"><div class="aboutCopy"><small>HELLO, I'M</small><h2><%= about.displayName||'Tamara' %></h2><div><%= about.bio||'My story is coming soon.' %></div></div><div class="aboutContact"><small>GET IN TOUCH</small><h2><%= about.contactHeading||'If you have any questions, contact me here:' %></h2><% if(about.contactText){ %><p><%= about.contactText %></p><% } %><% if(about.contactEmail){ %><a href="mailto:<%= about.contactEmail %>"><%= about.contactEmail %></a><% }else{ %><span>Email coming soon</span><% } %></div></section>
 </main>
 <%- include('partials/foot') %>

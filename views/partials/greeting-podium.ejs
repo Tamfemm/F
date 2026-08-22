@@ -1,4 +1,4 @@
 <aside class="greetingPodium">
   <% if(about?.greetingImage?.url||about?.mainImage?.url){ %><img src="<%= about.greetingImage?.url||about.mainImage.url %>" alt="<%= about.displayName||'Tamara' %>"><% }else{ %><div class="greetingPlaceholder">♥</div><% } %>
-  <div><small>A LITTLE HELLO FROM <%= (about?.displayName||'TAMARA').toUpperCase() %></small><strong><%= about?.greetingMessage||'Hi, I’m Tamara! Welcome to Tfem Hotties.' %></strong></div>
+  <div><small>A LITTLE HELLO FROM TAMARA</small><strong><%= !about?.greetingMessage||about.greetingMessage==='Hi, I’m Tamara! Welcome to Tfem Hotties.'?'Hi, I’m Tamara! The creator of this site. Welcome to TG Hotties.':about.greetingMessage %></strong></div>
 </aside>

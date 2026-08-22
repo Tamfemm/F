@@ -1,4 +1,4 @@
-# Tfem Hotties
+# TG Hotties
 
 Production-ready Node/Express application for paid model profiles across U.S. cities.
 

@@ -9,4 +9,4 @@ app.use(helmet({contentSecurityPolicy:false}));app.use(express.urlencoded({exten
 app.use(session({secret:process.env.SESSION_SECRET,resave:false,saveUninitialized:false,store:MongoStore.create({mongoUrl:process.env.MONGODB_URI}),cookie:{httpOnly:true,sameSite:"lax",secure:process.env.NODE_ENV==="production",maxAge:1000*60*60*24*14}}));
 app.use((req,res,next)=>{res.locals.userId=req.session.userId||null;res.locals.path=req.path;next()});app.get("/health",(_,res)=>res.json({ok:true}));
 app.use(authRoutes);app.use(profileRoutes);app.use(paymentRoutes);app.use(adminRoutes);app.use(publicRoutes);app.use((_,res)=>res.status(404).render("error",{message:"Page not found"}));
-const port=process.env.PORT||3000;app.listen(port,()=>console.log(`Tfem Hotties running on ${port}`));
+const port=process.env.PORT||3000;app.listen(port,()=>console.log(`TG Hotties running on ${port}`));

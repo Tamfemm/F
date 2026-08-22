@@ -10,7 +10,7 @@ const aboutPageSchema=new mongoose.Schema({
   contactHeading:{type:String,trim:true,maxlength:180,default:"If you have any questions, contact me here:"},
   contactText:{type:String,trim:true,maxlength:500},
   contactEmail:{type:String,trim:true,maxlength:200},
-  greetingMessage:{type:String,trim:true,maxlength:300,default:"Hi, I’m Tamara! Welcome to Tfem Hotties."},
+  greetingMessage:{type:String,trim:true,maxlength:300,default:"Hi, I’m Tamara! The creator of this site. Welcome to TG Hotties."},
   mainImage:imageSchema,
   greetingImage:imageSchema,
   gallery:{type:[imageSchema],validate:[value=>value.length<=12,"Maximum 12 gallery images"]},
