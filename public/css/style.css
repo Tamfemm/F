@@ -232,3 +232,33 @@ html{scroll-behavior:smooth}
 .galleryEmpty{padding:80px 20px;background:linear-gradient(120deg,#fff0f7,#eaf8ff);border:1px solid #efc5d9;border-radius:22px}
 .galleryEmpty div{font-size:60px;color:#66c9f0}.galleryEmpty h2{font:34px "Segoe Print",cursive;color:var(--pink)}
 @media(max-width:700px){.galleryStage{grid-template-columns:42px minmax(0,1fr) 42px;gap:7px}.galleryStage>button{width:42px;height:42px;font-size:30px}.galleryMainFrame{min-height:390px;padding:9px}.galleryThumbs{padding-left:0;padding-right:0}.galleryThumbs button{flex-basis:72px}}
+
+/* Tamara's complete story workflow */
+.storySaveChoices{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.storySaveChoices button{border:0;border-radius:99px;padding:15px 24px;font-size:12px;font-weight:900;cursor:pointer}
+.draftButton{background:#d9f1fb;color:#27546a}
+.publishStoryButton{background:var(--pink)!important;color:#fff}
+.saveConfirmation{display:flex;justify-content:space-between;gap:20px;margin:18px 0 26px;padding:18px 22px;border:1px solid #8ad7f5;border-radius:13px;background:#eaf9ff;color:#31586b}
+.saveConfirmation span{font-size:12px}
+.storyAdminColumns{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px}
+.storyShelf{border:1px solid #ead3df;border-radius:18px;padding:20px;background:#fffafd;scroll-margin-top:25px}
+.publishedShelf{background:#f5fcff;border-color:#cdeaf7}
+.storyShelfHead{display:flex;align-items:center;justify-content:space-between;padding-bottom:15px;border-bottom:1px solid #eadce4}
+.storyShelfHead small{font-size:9px;font-weight:900;letter-spacing:.14em;color:var(--pink)}
+.storyShelfHead h3{font:28px "Segoe Print",cursive;margin:5px 0 0;color:#4c3b4b}
+.storyShelfHead strong{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--pink);color:#fff}
+.publishedShelf .storyShelfHead strong{background:#55bfe9}
+.storyAdminList{display:grid;gap:13px;margin-top:15px}
+.storyAdminList article{display:grid;grid-template-columns:90px 1fr;gap:14px;padding:12px;background:#fff;border:1px solid #eee1e8;border-radius:13px}
+.storyAdminList article>img,.storyMiniPlaceholder{width:90px;height:105px;object-fit:cover;border-radius:9px}
+.storyMiniPlaceholder{display:grid;place-items:center;background:linear-gradient(145deg,#ffabd1,#a7e3fa);color:#fff;font-size:30px}
+.storyAdminInfo{min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.storyAdminInfo>b{font-size:15px}.storyAdminInfo>small{margin-top:4px;color:#887b88;font-size:10px}.storyAdminInfo>p{margin:8px 0;font-size:11px;line-height:1.45;color:#736674;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.storyItemActions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto}
+.storyItemActions a{color:var(--pink);font-size:10px;font-weight:900}
+.storyItemActions form{margin:0}.storyItemActions button{border:0;border-radius:99px;padding:7px 10px;background:#eee5ea;color:#665763;font-size:9px;font-weight:900;cursor:pointer}.storyItemActions button.publish{background:var(--pink);color:#fff}
+.shelfEmpty{text-align:center;padding:35px 15px;color:#8c7e8b;font-size:12px}
+.publishedStoryList{width:min(1080px,calc(100% - 40px));margin:55px auto 90px}
+.publishedStoryList>.storyGrid{width:100%;margin:24px 0 0}
+@media(max-width:900px){.storyAdminColumns{grid-template-columns:1fr}}
+@media(max-width:600px){.saveConfirmation{flex-direction:column}.storyAdminList article{grid-template-columns:70px 1fr}.storyAdminList article>img,.storyMiniPlaceholder{width:70px;height:88px}.storySaveChoices{align-items:stretch;flex-direction:column}.storySaveChoices a{text-align:center}}

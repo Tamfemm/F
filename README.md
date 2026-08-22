@@ -9,7 +9,7 @@ Production-ready Node/Express application for paid model profiles across U.S. ci
 - Up to 10 Cloudinary photos and one video (client validates a 3-second maximum).
 - $30/month recurring Stripe subscription.
 - Tamara's private, nontechnical admin at `/richgirlielifetammy` for creating, editing, hiding and publishing profiles.
-- Story and AI cartoon-strip editor with drafts, publishing, up to 12 ordered images, and public story pages.
+- Story and AI cartoon-strip editor with separate Save Draft and Publish buttons, up to 12 ordered images, private Draft and Published libraries with dates, and a dated public story listing.
 - Public About Me page preserving Tamara's picture, story, gallery, and contact-email sections, all editable from her private admin.
 - Separate public `/gallery` page with a large carousel, previous/next controls, and clickable thumbnails using Tamara's admin-uploaded gallery pictures.
 - Admin Stripe overview showing active subscriptions and recent payments from the connected Stripe account.
