@@ -28,6 +28,6 @@ Never commit the real `.env` file or paste secret keys into source code.
 
 ## Tamara's admin
 
-Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` in `.env` locally and in Render's Environment settings. Tamara signs in at `/richgirlielifetammy`. She can create profiles; write, edit and publish stories; upload AI cartoon strips and story images; keep work as a draft; and review Stripe activity. Use a strong password and never commit the real `.env` file.
+Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` in `.env` locally and in Render's Environment settings. Tamara signs in at `/richgirlielifetammy`. She can create profiles; update bios; replace or select the main profile picture; add and remove gallery pictures; replace the short video; write, edit and publish stories; upload AI cartoon strips; keep work as a draft; and review Stripe activity. Use a strong password and never commit the real `.env` file.
 
 The 30-card demo grid appears in every city so empty cities still demonstrate the complete layout. Real published profiles appear before the demo cards.
