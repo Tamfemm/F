@@ -196,3 +196,15 @@ footer{border-top:1px solid #ddd;min-height:120px;font-size:11px}
 .aboutAdminCallout p{margin:0}
 .aboutAdminCallout small{font-size:9px;letter-spacing:.15em}
 @media(max-width:800px){.aboutHero{grid-template-columns:1fr}.aboutHero img,.aboutPhotoPlaceholder{max-width:360px}.aboutGallery>div{grid-template-columns:repeat(2,1fr)}.aboutAdminCallout{align-items:start;flex-direction:column;gap:20px}.adminTopActions{flex-wrap:wrap}}
+
+/* Original About Me contact section */
+.aboutContact{margin-top:50px;text-align:center;background:linear-gradient(120deg,#fff0f7,#eaf8ff);border:1px solid #efc5d9;border-radius:22px;padding:45px 30px}
+.aboutContact small{color:var(--pink);font-size:9px;font-weight:900;letter-spacing:.2em}
+.aboutContact h2{font:34px/1.35 "Segoe Print",cursive;margin:12px auto;max-width:720px}
+.aboutContact p{line-height:1.7;color:#736675}
+.aboutContact a{display:inline-block;margin-top:12px;background:var(--pink);color:#fff;border-radius:99px;padding:14px 24px;font-weight:800}
+.aboutContact>span{display:block;margin-top:15px;color:#8c7d8c}
+.contactEditorPreview{display:grid;gap:8px;text-align:center;background:linear-gradient(120deg,#fff0f7,#eaf8ff);border:1px solid #efc5d9;border-radius:16px;padding:25px}
+.contactEditorPreview small{font-size:9px;letter-spacing:.15em;color:var(--pink)}
+.contactEditorPreview strong{font:23px "Segoe Print",cursive}
+.contactEditorPreview span{font-weight:700;color:var(--pink)}
