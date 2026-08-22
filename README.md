@@ -9,6 +9,7 @@ Production-ready Node/Express application for paid model profiles across U.S. ci
 - Up to 10 Cloudinary photos and one video (client validates a 3-second maximum).
 - $30/month recurring Stripe subscription.
 - Tamara's private, nontechnical admin at `/richgirlielifetammy` for creating, editing, hiding and publishing profiles.
+- Story and AI cartoon-strip editor with drafts, publishing, up to 12 ordered images, and public story pages.
 - Admin Stripe overview showing active subscriptions and recent payments from the connected Stripe account.
 - Stripe webhooks activate, suspend, or hide profiles automatically.
 - Public city listings show only active paid profiles.
@@ -27,6 +28,6 @@ Never commit the real `.env` file or paste secret keys into source code.
 
 ## Tamara's admin
 
-Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` in `.env` locally and in Render's Environment settings. Tamara signs in at `/richgirlielifetammy`. She can create profiles, write bios, upload photos and a short video, keep work as a draft, publish it, edit it later, and review Stripe activity. Use a strong password and never commit the real `.env` file.
+Set `ADMIN_EMAIL` and `ADMIN_PASSWORD` in `.env` locally and in Render's Environment settings. Tamara signs in at `/richgirlielifetammy`. She can create profiles; write, edit and publish stories; upload AI cartoon strips and story images; keep work as a draft; and review Stripe activity. Use a strong password and never commit the real `.env` file.
 
 The 30-card demo grid appears in every city so empty cities still demonstrate the complete layout. Real published profiles appear before the demo cards.

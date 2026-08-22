@@ -132,3 +132,35 @@ footer{border-top:1px solid #ddd;min-height:120px;font-size:11px}
 .publishBox{border-color:#ff9bc9!important;background:linear-gradient(120deg,#fff7fb,#effaff)!important}
 .editorButtons{display:flex;align-items:center;gap:20px}
 @media(max-width:800px){.adminWelcome{align-items:start;flex-direction:column;gap:20px}.adminStats{grid-template-columns:repeat(2,1fr)}.adminProfiles article{align-items:start;flex-direction:column;gap:14px}.adminProfiles article>div:first-child{width:100%;grid-template-columns:1fr}.rowActions{margin-left:0;flex-wrap:wrap}.payments>div{grid-template-columns:1fr 1fr}.adminPhotos{grid-template-columns:repeat(2,1fr)}}
+
+/* Stories and cartoon strips */
+.blueButton{background:#63c5f2}
+.storiesHero,.storyPage>header{text-align:center;padding:65px 20px;background:linear-gradient(120deg,#ffd8ea,#daf3ff)}
+.storiesHero>p,.storyPage>header>p{color:var(--pink);font-size:11px;font-weight:900;letter-spacing:.2em}
+.storiesHero h1,.storyPage>header h1{font:600 clamp(48px,6vw,76px)/1 "Segoe Print",cursive;margin:20px 0}
+.storiesHero h1 em{color:var(--pink);font-style:normal}
+.storyGrid{width:min(1080px,calc(100% - 40px));margin:55px auto 90px;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.storyCard{background:#fff;border:1px solid #efcade;border-radius:18px;overflow:hidden;box-shadow:0 14px 35px #8f477018}
+.storyCard>img,.storyPlaceholder{width:100%;aspect-ratio:16/10;object-fit:cover;background:linear-gradient(145deg,#ffa3ce,#9fddfa)}
+.storyPlaceholder{display:grid;place-items:center;color:#fff;font-size:70px}
+.storyCard>div{padding:23px}
+.storyCard small{font-size:10px;color:#8b7e8b;text-transform:uppercase;letter-spacing:.1em}
+.storyCard h2{font:30px "Segoe Print",cursive;margin:10px 0;color:var(--pink)}
+.storyCard p{line-height:1.6;color:#706471}
+.storyCard b{font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+.storyEmpty{grid-column:1/-1;text-align:center;padding:70px;background:#fff;border-radius:18px}
+.storyPage>header h1{max-width:950px;margin:20px auto}
+.storyPage article{width:min(900px,calc(100% - 40px));margin:45px auto 90px}
+.storyLead{font:24px/1.6 Georgia,serif;color:#5f5360;border-left:5px solid var(--pink);padding-left:22px}
+.storyBody{white-space:pre-wrap;font-size:17px;line-height:1.85;margin:35px 0}
+.comicStrip{display:grid;gap:18px;margin:35px 0}
+.comicStrip button{padding:0;border:0;background:transparent;cursor:zoom-in}
+.comicStrip img{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 12px 30px #5d31521f}
+.backStories{display:inline-block;margin-top:25px;color:var(--pink);font-weight:800}
+.shortText{min-height:90px!important}.storyText{min-height:320px!important}
+.fieldHelp{font-size:11px;color:#807481}
+.storyAdminImages{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.storyAdminImages label{background:#fff3f9;border:1px solid #f2cadd;border-radius:12px;padding:10px}
+.storyAdminImages img{width:100%;height:180px;object-fit:contain;background:#fff;margin:8px 0}
+.storyAdminImages span{font-size:10px}
+@media(max-width:800px){.storyGrid{grid-template-columns:1fr}.storyAdminImages{grid-template-columns:repeat(2,1fr)}.nav nav{gap:10px}.nav nav a{font-size:9px}}
