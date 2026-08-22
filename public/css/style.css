@@ -208,3 +208,27 @@ footer{border-top:1px solid #ddd;min-height:120px;font-size:11px}
 .contactEditorPreview small{font-size:9px;letter-spacing:.15em;color:var(--pink)}
 .contactEditorPreview strong{font:23px "Segoe Print",cursive}
 .contactEditorPreview span{font-weight:700;color:var(--pink)}
+.galleryJump{display:block;width:max-content;margin-top:32px;background:var(--pink);color:#fff;border-radius:99px;padding:15px 27px;font-size:12px;font-weight:900;letter-spacing:.06em;box-shadow:0 12px 28px #db1d7740;transition:transform .18s ease,box-shadow .18s ease}
+.galleryJump:hover{transform:translateY(-2px);box-shadow:0 16px 32px #db1d7750}
+.galleryAnchor{display:block;position:relative;top:-25px}
+html{scroll-behavior:smooth}
+
+/* Separate public gallery carousel */
+.galleryPage>header{text-align:center;padding:65px 20px;background:linear-gradient(120deg,#ffd7e9,#daf3ff)}
+.galleryPage>header p{color:var(--pink);font-size:10px;font-weight:900;letter-spacing:.2em}
+.galleryPage>header h1{font:600 clamp(48px,7vw,82px)/1 "Segoe Print",cursive;color:var(--pink);margin:18px 0}
+.galleryPage>header span{font:20px Georgia,serif;color:#615463}
+.galleryCarousel{width:min(980px,calc(100% - 40px));margin:55px auto 90px;text-align:center}
+.galleryStage{display:grid;grid-template-columns:58px minmax(0,1fr) 58px;align-items:center;gap:18px}
+.galleryStage>button{width:58px;height:58px;border:0;border-radius:50%;background:var(--pink);color:#fff;font:42px/1 Georgia,serif;cursor:pointer;box-shadow:0 10px 25px #db1d7738;transition:transform .18s ease}
+.galleryStage>button:hover{transform:scale(1.07)}
+.galleryMainFrame{position:relative;display:grid;place-items:center;min-height:560px;padding:18px;background:linear-gradient(145deg,#fff2f8,#eaf8ff);border:1px solid #efc5d9;border-radius:24px;overflow:hidden}
+.galleryMainFrame img{display:block;max-width:100%;width:auto;height:auto;max-height:72vh;object-fit:contain;border-radius:14px;box-shadow:0 14px 38px #5f315126}
+.galleryMainFrame span{position:absolute;right:28px;bottom:28px;padding:8px 13px;border-radius:99px;background:#2f2330cc;color:#fff;font-size:11px;font-weight:800}
+.galleryThumbs{display:flex;gap:12px;overflow-x:auto;padding:18px 70px 12px;scrollbar-color:var(--pink) #fbe7f1}
+.galleryThumbs button{flex:0 0 92px;border:3px solid transparent;border-radius:13px;padding:3px;background:#fff;cursor:pointer;opacity:.65}
+.galleryThumbs button.active{border-color:var(--pink);opacity:1}
+.galleryThumbs img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px}
+.galleryEmpty{padding:80px 20px;background:linear-gradient(120deg,#fff0f7,#eaf8ff);border:1px solid #efc5d9;border-radius:22px}
+.galleryEmpty div{font-size:60px;color:#66c9f0}.galleryEmpty h2{font:34px "Segoe Print",cursive;color:var(--pink)}
+@media(max-width:700px){.galleryStage{grid-template-columns:42px minmax(0,1fr) 42px;gap:7px}.galleryStage>button{width:42px;height:42px;font-size:30px}.galleryMainFrame{min-height:390px;padding:9px}.galleryThumbs{padding-left:0;padding-right:0}.galleryThumbs button{flex-basis:72px}}

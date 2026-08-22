@@ -1,0 +1,12 @@
+<%- include('partials/head',{title:`${about.displayName||'Tamara'}'s Gallery | Tfem Hotties`}) %>
+<main class="galleryPage">
+  <header><p>TFEM GALLERY</p><h1><%= about.displayName||'Tamara' %>'s Gallery</h1><span>A collection of my favorite pictures.</span></header>
+  <section class="galleryCarousel" data-gallery-carousel>
+    <% if(!images.length){ %><div class="galleryEmpty"><div>♥</div><h2>My gallery is coming soon.</h2></div><% }else{ %>
+      <div class="galleryStage"><button type="button" id="galleryPrev" aria-label="Previous picture">‹</button><div class="galleryMainFrame"><img id="galleryMain" src="<%= images[0].url %>" alt="<%= about.displayName||'Tamara' %> gallery picture 1"><span id="galleryCounter">1 / <%= images.length %></span></div><button type="button" id="galleryNext" aria-label="Next picture">›</button></div>
+      <div class="galleryThumbs"><% images.forEach((image,index)=>{ %><button type="button" class="<%= index===0?'active':'' %>" data-gallery-thumb data-src="<%= image.url %>" data-index="<%= index %>" aria-label="View gallery picture <%= index+1 %>"><img src="<%= image.url %>" alt="Gallery thumbnail <%= index+1 %>"></button><% }) %></div>
+    <% } %>
+    <a class="backStories" href="/about-me">← Back to About Me</a>
+  </section>
+</main>
+<%- include('partials/foot') %>
