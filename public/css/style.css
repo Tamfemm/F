@@ -262,3 +262,22 @@ html{scroll-behavior:smooth}
 .publishedStoryList>.storyGrid{width:100%;margin:24px 0 0}
 @media(max-width:900px){.storyAdminColumns{grid-template-columns:1fr}}
 @media(max-width:600px){.saveConfirmation{flex-direction:column}.storyAdminList article{grid-template-columns:70px 1fr}.storyAdminList article>img,.storyMiniPlaceholder{width:70px;height:88px}.storySaveChoices{align-items:stretch;flex-direction:column}.storySaveChoices a{text-align:center}}
+
+/* Tamara greeting podium */
+.greetingPodium{width:min(670px,calc(100% - 30px));margin:0 auto 32px;display:flex;align-items:center;justify-content:center;gap:22px;padding:18px 25px;border:1px solid #f0bbd5;border-radius:18px;background:#ffffffb8;box-shadow:0 12px 30px #6e36541a;text-align:left}
+.greetingPodium img,.greetingPlaceholder{flex:0 0 92px;width:92px;height:92px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 7px 20px #6a354f2c}
+.greetingPlaceholder{display:grid;place-items:center;background:linear-gradient(145deg,#ff9dca,#9dddfb);color:#fff;font-size:34px}
+.greetingPodium div:last-child{display:flex;flex-direction:column;gap:7px}.greetingPodium small{color:var(--pink);font-size:9px;font-weight:900;letter-spacing:.16em}.greetingPodium strong{font:21px/1.4 "Segoe Print",cursive;color:#463647}
+.listingHero .greetingPodium{margin-bottom:28px}
+@media(max-width:600px){.greetingPodium{align-items:center;flex-direction:column;text-align:center}.greetingPodium strong{font-size:18px}}
+
+/* Immediate story-image removal and ordering */
+.storyOrderGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.storyOrderItem{display:flex;flex-direction:column;gap:9px;padding:11px;border:2px solid #f0cade;border-radius:14px;background:#fff7fb}
+.storyOrderItem>img{width:100%;height:190px;object-fit:contain;border-radius:9px;background:#fff}
+.storyOrderItem>div{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.storyOrderItem button{border:0;border-radius:8px;padding:9px 6px;background:#dff3fc;color:#315b6d;font-size:10px;font-weight:900;cursor:pointer}
+.storyOrderItem button:disabled{opacity:.35;cursor:default}.storyOrderItem .removeStoryImage{background:#ffdfec;color:#a51f58}
+.storyOrderNumber{color:var(--pink);font-size:12px}
+@media(max-width:750px){.storyOrderGrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.storyOrderGrid{grid-template-columns:1fr}}
