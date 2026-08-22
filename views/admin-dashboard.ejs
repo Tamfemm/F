@@ -2,7 +2,7 @@
 <main class="dashboard adminArea">
   <div class="adminWelcome">
     <div><p>TAMARA'S ADMIN</p><h1>Your creative studio.</h1><span>Profiles, stories, cartoons and payments—without touching any code.</span></div>
-    <div class="adminTopActions"><a class="primary" href="/richgirlielifetammy/profiles/new">+ Create profile</a><a class="primary blueButton" href="/richgirlielifetammy/stories/new">+ Create story</a><form action="/richgirlielifetammy/logout" method="post"><button>Log out</button></form></div>
+    <div class="adminTopActions"><a class="primary" href="/richgirlielifetammy/about-me">Edit My About Page</a><a class="primary" href="/richgirlielifetammy/profiles/new">+ Create profile</a><a class="primary blueButton" href="/richgirlielifetammy/stories/new">+ Create story</a><form action="/richgirlielifetammy/logout" method="post"><button>Log out</button></form></div>
   </div>
   <section class="adminStats">
     <div><small>TOTAL PROFILES</small><strong><%= profiles.length %></strong></div>
@@ -10,6 +10,7 @@
     <div><small>ACTIVE STRIPE SUBSCRIPTIONS</small><strong><%= stripeSummary.connected?stripeSummary.activeSubscriptions:'—' %></strong></div>
     <div><small>RECENT PAYMENTS</small><strong><%= stripeSummary.connected?`${stripeSummary.currency} $${stripeSummary.revenue.toFixed(2)}`:'Not connected' %></strong></div>
   </section>
+  <section class="adminPanel aboutAdminCallout"><div><small>YOUR PERSONAL PAGE</small><h2>About Me, bio picture & gallery</h2><p>Update your personal bio, replace your main picture, and manage your gallery whenever you want.</p></div><a class="primary" href="/richgirlielifetammy/about-me">Edit My About Page</a></section>
   <section class="adminPanel">
     <div class="sectionHead"><h2>Stories & cartoon strips</h2><small>Upload the images in reading order</small></div>
     <div class="adminProfiles"><% if(!stories.length){ %><p>No stories yet. Click “Create story” to make the first one.</p><% } stories.forEach(story=>{ %><article><div><b><%= story.title %></b><span><%= story.images.length %> image<%= story.images.length===1?'':'s' %></span><small class="badge <%= story.status==='published'?'active':'' %>"><%= story.status %></small></div><div class="rowActions"><a href="/richgirlielifetammy/stories/<%= story._id %>/edit">Edit story</a><% if(story.status==='published'){ %><a href="/stories/<%= story.slug %>">View live story</a><form action="/richgirlielifetammy/stories/<%= story._id %>/status" method="post"><input type="hidden" name="status" value="draft"><button>Hide</button></form><% }else{ %><form action="/richgirlielifetammy/stories/<%= story._id %>/status" method="post"><input type="hidden" name="status" value="published"><button class="publish">Publish</button></form><% } %></div></article><% }) %></div>
